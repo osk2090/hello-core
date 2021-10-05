@@ -22,4 +22,9 @@ public class OrderServiceImpl implements OrderService {
 
         return new Order(memberId, itemName, itemPrice, discountPrice);//새 주문을 생성하여 memberId,상품이름,상품가격,할인금액을 리턴해준다.
     }
+
+    //테스트 용도
+    public MemberRepository getMemberRepository() {
+        return memberRepository;
+    }
 }
